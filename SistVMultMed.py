@@ -6,7 +6,7 @@ class Medicamento:
     def verNombre(self):
         return self.__nombre 
     def verDosis(self):
-        return self.__dosis 
+        return self.__dosis
     
     def asignarNombre(self,med):
         self.__nombre = med 

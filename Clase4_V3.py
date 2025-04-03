@@ -58,11 +58,12 @@ def main():
         
         if opcion == 1:
             #ingreso pacientes
-            print("A continuacion se solicitaran los datos ...") 
+            print("Solicitando los datos ...") 
             #1. Se solicitan los datos
             cedula = int(input("Ingrese la cedula: ")) 
             if sis.verificarPaciente(cedula):
                 print("\n<< Ya existe un paciente con esa cedula >>".upper()) 
+                print("\n<< intente nuevamente >>".upper()) 
             else:    
                 # 2. se crea un objeto Paciente
                 pac = Paciente() 
@@ -76,7 +77,7 @@ def main():
                 if r:
                     print("Paciente ingresado") 
                 else:
-                    print("No ingresado") 
+                    print("Error paciente no ingresado") 
         elif opcion == 2:
             #1. solicito la cedula que quiero buscar
             c = int(input("Ingrese la cedula a buscar: ")) 
